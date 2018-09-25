@@ -5,11 +5,170 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Investments_Tracker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="665.546" Width="826.47">
+        Title="MainWindow" Height="518.546" Width="785.47">
     <Grid>
-        <ComboBox HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label Content="Investment Performance Tracker" HorizontalAlignment="Center" Margin="135,10,179,0" VerticalAlignment="Top" FontSize="36"/>
-        <Label Content="Coded in Visual C# by Michael Brand" HorizontalAlignment="Center" Margin="301,73,325,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmb_FirstSelection" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top" Width="150" SelectedIndex="0">
+            <ComboBoxItem FontWeight="Bold">*Select Platform*</ComboBoxItem>
+            <ComboBoxItem>Lendy</ComboBoxItem>
+            <ComboBoxItem>Funding Secure</ComboBoxItem>
+            <ComboBoxItem>Ablrate</ComboBoxItem>
+            <ComboBoxItem>Funding Circle</ComboBoxItem>
+            <ComboBoxItem>Assetz Capital</ComboBoxItem>
+            <ComboBoxItem>Vanguard</ComboBoxItem>
+        </ComboBox>
 
+        <ComboBox x:Name="cmb_SecondSelection" HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top" Width="150" SelectedIndex="0">
+            <ComboBoxItem FontWeight="Bold">*Select Platform*</ComboBoxItem>
+            <ComboBoxItem>Lendy</ComboBoxItem>
+            <ComboBoxItem>Funding Secure</ComboBoxItem>
+            <ComboBoxItem>Ablrate</ComboBoxItem>
+            <ComboBoxItem>Funding Circle</ComboBoxItem>
+            <ComboBoxItem>Assetz Capital</ComboBoxItem>
+            <ComboBoxItem>Vanguard</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox x:Name="cmb_ThirdSelection" HorizontalAlignment="Left" Margin="10,211,0,0" VerticalAlignment="Top" Width="150" SelectedIndex="0">
+            <ComboBoxItem FontWeight="Bold">*Select Platform*</ComboBoxItem>
+            <ComboBoxItem>Lendy</ComboBoxItem>
+            <ComboBoxItem>Funding Secure</ComboBoxItem>
+            <ComboBoxItem>Ablrate</ComboBoxItem>
+            <ComboBoxItem>Funding Circle</ComboBoxItem>
+            <ComboBoxItem>Assetz Capital</ComboBoxItem>
+            <ComboBoxItem>Vanguard</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox x:Name="cmb_FourthSelection" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top" Width="150" SelectedIndex="0">
+            <ComboBoxItem FontWeight="Bold">*Select Platform*</ComboBoxItem>
+            <ComboBoxItem>Lendy</ComboBoxItem>
+            <ComboBoxItem>Funding Secure</ComboBoxItem>
+            <ComboBoxItem>Ablrate</ComboBoxItem>
+            <ComboBoxItem>Funding Circle</ComboBoxItem>
+            <ComboBoxItem>Assetz Capital</ComboBoxItem>
+            <ComboBoxItem>Vanguard</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox x:Name="cmb_FifthSelection" HorizontalAlignment="Left" Margin="10,265,0,0" VerticalAlignment="Top" Width="150" SelectedIndex="0">
+            <ComboBoxItem FontWeight="Bold">*Select Platform*</ComboBoxItem>
+            <ComboBoxItem>Lendy</ComboBoxItem>
+            <ComboBoxItem>Funding Secure</ComboBoxItem>
+            <ComboBoxItem>Ablrate</ComboBoxItem>
+            <ComboBoxItem>Funding Circle</ComboBoxItem>
+            <ComboBoxItem>Assetz Capital</ComboBoxItem>
+            <ComboBoxItem>Vanguard</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox x:Name="cmb_SixthSelection" HorizontalAlignment="Left" Margin="10,292,0,0" VerticalAlignment="Top" Width="150" SelectedIndex="0">
+            <ComboBoxItem FontWeight="Bold">*Select Platform*</ComboBoxItem>
+            <ComboBoxItem>Lendy</ComboBoxItem>
+            <ComboBoxItem>Funding Secure</ComboBoxItem>
+            <ComboBoxItem>Ablrate</ComboBoxItem>
+            <ComboBoxItem>Funding Circle</ComboBoxItem>
+            <ComboBoxItem>Assetz Capital</ComboBoxItem>
+            <ComboBoxItem>Vanguard</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox x:Name="cmb_SeventhSelection" HorizontalAlignment="Left" Margin="10,319,0,0" VerticalAlignment="Top" Width="150" SelectedIndex="0">
+            <ComboBoxItem FontWeight="Bold">*Select Platform*</ComboBoxItem>
+            <ComboBoxItem>Lendy</ComboBoxItem>
+            <ComboBoxItem>Funding Secure</ComboBoxItem>
+            <ComboBoxItem>Ablrate</ComboBoxItem>
+            <ComboBoxItem>Funding Circle</ComboBoxItem>
+            <ComboBoxItem>Assetz Capital</ComboBoxItem>
+            <ComboBoxItem>Vanguard</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox x:Name="cmb_EighthSelection" HorizontalAlignment="Left" Margin="10,346,0,0" VerticalAlignment="Top" Width="150" SelectedIndex="0">
+            <ComboBoxItem FontWeight="Bold">*Select Platform*</ComboBoxItem>
+            <ComboBoxItem>Lendy</ComboBoxItem>
+            <ComboBoxItem>Funding Secure</ComboBoxItem>
+            <ComboBoxItem>Ablrate</ComboBoxItem>
+            <ComboBoxItem>Funding Circle</ComboBoxItem>
+            <ComboBoxItem>Assetz Capital</ComboBoxItem>
+            <ComboBoxItem>Vanguard</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox x:Name="cmb_NinthSelection" HorizontalAlignment="Left" Margin="10,373,0,0" VerticalAlignment="Top" Width="150" SelectedIndex="0">
+            <ComboBoxItem FontWeight="Bold">*Select Platform*</ComboBoxItem>
+            <ComboBoxItem>Lendy</ComboBoxItem>
+            <ComboBoxItem>Funding Secure</ComboBoxItem>
+            <ComboBoxItem>Ablrate</ComboBoxItem>
+            <ComboBoxItem>Funding Circle</ComboBoxItem>
+            <ComboBoxItem>Assetz Capital</ComboBoxItem>
+            <ComboBoxItem>Vanguard</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox x:Name="cmb_TenthSelection" HorizontalAlignment="Left" Margin="10,400,0,0" VerticalAlignment="Top" Width="150" SelectedIndex="0">
+            <ComboBoxItem FontWeight="Bold">*Select Platform*</ComboBoxItem>
+            <ComboBoxItem>Lendy</ComboBoxItem>
+            <ComboBoxItem>Funding Secure</ComboBoxItem>
+            <ComboBoxItem>Ablrate</ComboBoxItem>
+            <ComboBoxItem>Funding Circle</ComboBoxItem>
+            <ComboBoxItem>Assetz Capital</ComboBoxItem>
+            <ComboBoxItem>Vanguard</ComboBoxItem>
+        </ComboBox>
+
+        <Label Content="Investment Performance Tracker" HorizontalAlignment="Center" Margin="114,10,141,0" VerticalAlignment="Top" FontSize="36" Width="522"/>
+        <Label Content="Coded in Visual C# by Michael Brand" HorizontalAlignment="Center" Margin="282,73,289,0" VerticalAlignment="Top" Width="206"/>
+        <Label Content="Amount Invested" HorizontalAlignment="Left" Margin="245,127,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Interest Accrued" HorizontalAlignment="Left" Margin="370,127,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Losses Accrued" HorizontalAlignment="Left" Margin="495,127,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Total" HorizontalAlignment="Left" Margin="620,127,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <Button x:Name="btn_FirstConnect" Content="Connect" HorizontalAlignment="Left" Margin="165,158,0,0" VerticalAlignment="Top" Width="75" Click="btn_FirstConnect_Click"/>
+        <Button x:Name="btn_SecondConnect" Content="Connect" HorizontalAlignment="Left" Margin="165,185,0,0" VerticalAlignment="Top" Width="75" Click="btn_SecondConnect_Click"/>
+        <Button x:Name="btn_ThirdConnect" Content="Connect" HorizontalAlignment="Left" Margin="165,212,0,0" VerticalAlignment="Top" Width="75" Click="btn_ThirdConnect_Click"/>
+        <Button x:Name="btn_FourthConnect" Content="Connect" HorizontalAlignment="Left" Margin="165,239,0,0" VerticalAlignment="Top" Width="75" Click="btn_FourthConnect_Click"/>
+        <Button x:Name="btn_FifthConnect" Content="Connect" HorizontalAlignment="Left" Margin="165,266,0,0" VerticalAlignment="Top" Width="75" Click="btn_FifthConnect_Click"/>
+        <Button x:Name="btn_SixthConnect" Content="Connect" HorizontalAlignment="Left" Margin="165,293,0,0" VerticalAlignment="Top" Width="75" Click="btn_SixthConnect_Click"/>
+        <Button x:Name="btn_SeventhConnect" Content="Connect" HorizontalAlignment="Left" Margin="165,320,0,0" VerticalAlignment="Top" Width="75" Click="btn_SeventhConnect_Click"/>
+        <Button x:Name="btn_EighthConnect" Content="Connect" HorizontalAlignment="Left" Margin="165,347,0,0" VerticalAlignment="Top" Width="75" Click="btn_EighthConnect_Click"/>
+        <Button x:Name="btn_NinthConnect" Content="Connect" HorizontalAlignment="Left" Margin="165,374,0,0" VerticalAlignment="Top" Width="75" Click="btn_NinthConnect_Click"/>
+        <Button x:Name="btn_TenthConnect" Content="Connect" HorizontalAlignment="Left" Margin="165,401,0,0" VerticalAlignment="Top" Width="75" Click="btn_TenthConnect_Click"/>
+
+        <TextBox x:Name="txt_FirstInvested" HorizontalAlignment="Left" Height="20" Margin="245,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00" x:FieldModifier="public"/>
+        <TextBox x:Name="txt_SecondInvested" HorizontalAlignment="Left" Height="20" Margin="245,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_ThirdInvested" HorizontalAlignment="Left" Height="20" Margin="245,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_FourthInvested" HorizontalAlignment="Left" Height="20" Margin="245,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_FifthInvested" HorizontalAlignment="Left" Height="20" Margin="245,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_SixthInvested" HorizontalAlignment="Left" Height="20" Margin="245,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_SeventhInvested" HorizontalAlignment="Left" Height="20" Margin="245,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_EighthInvested" HorizontalAlignment="Left" Height="20" Margin="245,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_NinthInvested" HorizontalAlignment="Left" Height="20" Margin="245,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_TenthInvested" HorizontalAlignment="Left" Height="20" Margin="245,401,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+
+        <TextBox x:Name="txt_FirstInterest" HorizontalAlignment="Left" Height="20" Margin="370,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_SecondInterest" HorizontalAlignment="Left" Height="20" Margin="370,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_ThirdInterest" HorizontalAlignment="Left" Height="20" Margin="370,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_FourthInterest" HorizontalAlignment="Left" Height="20" Margin="370,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_FifthInterest" HorizontalAlignment="Left" Height="20" Margin="370,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_SixthInterest" HorizontalAlignment="Left" Height="20" Margin="370,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_SeventhInterest" HorizontalAlignment="Left" Height="20" Margin="370,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_EighthInterest" HorizontalAlignment="Left" Height="20" Margin="370,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_NinthInterest" HorizontalAlignment="Left" Height="20" Margin="370,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_TenthInterest" HorizontalAlignment="Left" Height="20" Margin="370,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+
+        <TextBox x:Name="txt_FirstLosses" HorizontalAlignment="Left" Height="20" Margin="495,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_SecondLosses" HorizontalAlignment="Left" Height="20" Margin="495,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_ThirdLosses" HorizontalAlignment="Left" Height="20" Margin="495,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_FourthLosses" HorizontalAlignment="Left" Height="20" Margin="495,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_FifthLosses" HorizontalAlignment="Left" Height="20" Margin="495,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_SixthLosses" HorizontalAlignment="Left" Height="20" Margin="495,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_SeventhLosses" HorizontalAlignment="Left" Height="20" Margin="495,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_EighthLosses" HorizontalAlignment="Left" Height="20" Margin="495,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_NinthLosses" HorizontalAlignment="Left" Height="20" Margin="495,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_TenthLosses" HorizontalAlignment="Left" Height="20" Margin="495,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+
+        <TextBox x:Name="txt_FirstTotal" HorizontalAlignment="Left" Height="20" Margin="620,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_SecondTotal" HorizontalAlignment="Left" Height="20" Margin="620,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_ThirdTotal" HorizontalAlignment="Left" Height="20" Margin="620,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_FourthTotal" HorizontalAlignment="Left" Height="20" Margin="620,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_FifthTotal" HorizontalAlignment="Left" Height="20" Margin="620,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_SixthTotal" HorizontalAlignment="Left" Height="20" Margin="620,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_SeventhTotal" HorizontalAlignment="Left" Height="20" Margin="620,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_EighthTotal" HorizontalAlignment="Left" Height="20" Margin="620,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_NinthTotal" HorizontalAlignment="Left" Height="20" Margin="620,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_TenthTotal" HorizontalAlignment="Left" Height="20" Margin="620,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <TextBox x:Name="txt_GrandTotal" HorizontalAlignment="Left" Height="20" Margin="620,443,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Text="£0.00"/>
+        <Label Content="Grand Total" HorizontalAlignment="Left" Margin="540,439,0,0" VerticalAlignment="Top" Height="26" Width="75"/>
     </Grid>
 </Window>
