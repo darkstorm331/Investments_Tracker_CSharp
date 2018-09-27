@@ -61,7 +61,23 @@ namespace Investments_Tracker
                             if(result == true)
                             {
                                 postResponse = llp.lendyResponse;
-                                                            
+                                string liveLoanParts = "<span class='c-dashboard-data__value'>";
+
+                                int firstIndex = postResponse.IndexOf(liveLoanParts, 25474) + liveLoanParts.Length;
+                                int secondIndex = postResponse.IndexOf("<", firstIndex);
+                                int substringLength = (secondIndex - firstIndex);
+
+                                txt_FirstInvested.Text = postResponse.Substring(firstIndex, substringLength);
+
+                                string interestEarned = "<p class='c-labelled-list__content'>";
+
+                                firstIndex = postResponse.IndexOf(interestEarned, 33200) + interestEarned.Length;
+                                secondIndex = postResponse.IndexOf("<", firstIndex);
+                                substringLength = (secondIndex - firstIndex);
+
+                                txt_FirstInterest.Text = postResponse.Substring(firstIndex, substringLength);
+
+                                txt_FirstTotal = 
                             } else
                             {
 

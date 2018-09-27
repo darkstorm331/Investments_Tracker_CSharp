@@ -22,12 +22,18 @@ namespace Investments_Tracker
     /// </summary>
     public partial class LendyLoginPage : Window
     {
-        private static readonly HttpClient client = new HttpClient();
+        private CookieContainer cookieContainer;
+        private HttpClientHandler clienthandler;
+        private HttpClient client;
         public string lendyResponse { get; set; }
 
         public LendyLoginPage()
         {
             InitializeComponent();
+
+            cookieContainer = new CookieContainer();
+            clienthandler = new HttpClientHandler { AllowAutoRedirect = true, UseCookies = true, CookieContainer = cookieContainer };
+            client = new HttpClient(clienthandler);
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
@@ -36,54 +42,65 @@ namespace Investments_Tracker
             Close();
         }
 
-        private void Confirm_Click(object sender, RoutedEventArgs e)
+        private async void Confirm_Click(object sender, RoutedEventArgs e)
         {
             string emailAdd = txt_EmailAddress.Text;
             string password = txt_Password.Password;
 
-            var values = new Dictionary<string, string>
-            {
-                {"email", emailAdd},
-                {"password", password}
-            };
+            string loginOutput = await HttpPost("https://lendy.co.uk/login", emailAdd, password);          
+            Console.WriteLine(loginOutput);
 
-            var content = new FormUrlEncodedContent(values);
-
-            var postTask = Task.Run(async () => {
-                var response = await client.PostAsync("https://lendy.co.uk/login", content);
-
-                var responseString = await response.Content.ReadAsStringAsync();
-
-                lendyResponse = responseString;
-            });
-
-            postTask.Wait();
-            Console.WriteLine(lendyResponse);
-
-            if (lendyResponse.Contains("<p class='c-flash-message__message'>Couldn't login with those details</p>"))
+            if (loginOutput.Contains("<p class='c-flash-message__message'>Couldn't login with those details</p>"))
             {
                 MessageBox.Show("The given username or password was incorrect", "Invalid Credentials", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.OK);
             }
             else
-            {               
+            {
+                string detailsPageOutput = await HttpGet("https://lendy.co.uk/account/statement?start=01%2F01%2F2016");
+                Console.WriteLine(detailsPageOutput);
+
+                lendyResponse = detailsPageOutput;
+
                 DialogResult = true;                
                 Close();
             }
         }
 
-        private static async Task<string> HttpPost(string emailAddress, string password)
+        private async Task<string> HttpPost(string url, string emailAddress = "", string password = "")
         {
-            var values = new Dictionary<string, string>
+            string responseString = "";
+            HttpResponseMessage response;
+            FormUrlEncodedContent content;
+
+            if (emailAddress != "" && password != "")
             {
-                {"email", emailAddress},
-                {"password", password}
-            };
+                var values = new Dictionary<string, string>
+                {
+                    {"email", emailAddress},
+                    {"password", password}
+                };
 
-            var content = new FormUrlEncodedContent(values);
+                content = new FormUrlEncodedContent(values);
 
-            var response = await client.PostAsync("https://lendy.co.uk/login", content);
+                response = await client.PostAsync(url, content);
 
-            var responseString = await response.Content.ReadAsStringAsync();
+                responseString = await response.Content.ReadAsStringAsync();
+            } else
+            {
+                responseString = "";
+            }
+
+            return responseString;
+        }
+
+        private async Task<string> HttpGet(string url)
+        {
+            string responseString = "";
+            HttpResponseMessage response;
+
+            response = await client.GetAsync(url);
+
+            responseString = await response.Content.ReadAsStringAsync();
 
             return responseString;
         }
